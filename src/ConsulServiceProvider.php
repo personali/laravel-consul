@@ -1,8 +1,9 @@
 <?php
 namespace Personali\LaravelConsul;
 
+use App;
 use Illuminate\Support\ServiceProvider;
-class ConsulServiceProvide extends ServiceProvider{
+class ConsulServiceProvider extends ServiceProvider{
 
     public function boot(){
 
