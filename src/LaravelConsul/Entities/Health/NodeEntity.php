@@ -1,14 +1,14 @@
 <?php
 namespace Personali\LaravelConsul\Entities\Health;
 
-use Personali\LaravelConsul\Entity\IEntity;
+use Personali\LaravelConsul\Entities\IEntity;
 
 class NodeEntity implements IEntity{
 	private $_name;
 	private $_address;
 
 	public static function fromArray($array){
-		return new NodeEntity($array["Node"], $array["Address"]);
+		return new NodeEntity($array->Node, $array->Address);
 	}
 
 	private function __construct($name, $address){

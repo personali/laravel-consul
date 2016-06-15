@@ -11,6 +11,6 @@ abstract Class Client{
 
 	protected function getConsulResponse($uri){
 		$response = $this->_api->get($uri);
-		return json_encode($response->getBody());
+		return json_decode($response->getBody());
 	}
 }

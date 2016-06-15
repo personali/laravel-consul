@@ -1,6 +1,6 @@
-<?
+<?php
 namespace Personali\LaravelConsul\Entities;
 
 interface IEntity{
-	static function fromArray($array);
+	public static function fromArray($array);
 }

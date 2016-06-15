@@ -10,7 +10,7 @@ class ServiceHealthEntity implements IEntity{
 	private $_checks;
 
 	public static function fromArray($array){
-		return new ServiceHealthEntity(new NodeEntity($array["Node"]));
+		return new ServiceHealthEntity(NodeEntity::fromArray($array->Node));
 	}
 
 	private function __construct($node, $service = null, $checks = null){
@@ -24,6 +24,6 @@ class ServiceHealthEntity implements IEntity{
 	}
 
 	public function getServices(){
-		return $this->_services
+		return $this->_services;
 	}
 }
