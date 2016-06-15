@@ -1,0 +1,19 @@
+{
+    "name": "personali/laravel-consul",
+    "description": "An optional laravel 5 package for querying consul agents",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amirbilu",
+            "email": "amirbilu@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Personali\\LaravelConsul\\": "src/"
+        }
+    }
+}
