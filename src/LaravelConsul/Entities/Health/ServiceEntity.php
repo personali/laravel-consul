@@ -27,6 +27,6 @@ class ServiceEntity implements IEntity{
 	}
 
 	public function getPort(){
-		return $this->_address;
+		return $this->_port;
 	}
 }
